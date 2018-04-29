@@ -10,8 +10,8 @@ language form of that date. If it does not contain a date or Unix timestamp, it 
 
 ### Example usage:
 ```
-https://arcane-sands-42413.herokuapp.com/December%2015,%202015
-https://arcane-sands-42413.herokuapp.com/1450137600
+https://arcane-sands-42413.herokuapp.com/convert/December%2015,%202015
+https://arcane-sands-42413.herokuapp.com/convert/1450137600
 ```
 
 ### Example output:

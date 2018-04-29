@@ -16,7 +16,7 @@ public class TimestampController {
         this.timestampService = timestampService;
     }
 
-    @RequestMapping(value = "/{date:\\w+}", method = RequestMethod.GET)
+    @RequestMapping(value = "/convert/{date}", method = RequestMethod.GET)
     public TimestampResponse convert(@PathVariable("date") String date) {
         return timestampService.convert(date);
     }
