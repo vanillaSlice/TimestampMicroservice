@@ -1,7 +1,7 @@
 # Timestamp Microservice
 
 A simple timestamp microservice built with Spring Boot. A deployed version can be viewed
-[here](https://arcane-sands-42413.herokuapp.com/).
+[here](https://slicetimestamp.herokuapp.com/).
 
 ## About
 The user can pass a string as a parameter, and it will check to see whether that string contains either a Unix timestamp 
@@ -10,8 +10,8 @@ language form of that date. If it does not contain a date or Unix timestamp, it 
 
 ### Example usage:
 ```
-https://arcane-sands-42413.herokuapp.com/convert/December%2015,%202015
-https://arcane-sands-42413.herokuapp.com/convert/1450137600
+https://slicetimestamp.herokuapp.com/convert/December%2015,%202015
+https://slicetimestamp.herokuapp.com/convert/1450137600
 ```
 
 ### Example output:
