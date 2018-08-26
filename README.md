@@ -8,3 +8,8 @@ A simple timestamp microservice built with Spring Boot. A deployed version can b
 gradle bootRun
 ```
 Then point your browser to [localhost:8080](http://localhost:8080).
+
+## Running Tests
+```
+gradle test
+```
