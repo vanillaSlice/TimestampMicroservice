@@ -4,15 +4,15 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.jupiter.api.Test;
 
 /**
- * {@link TimestampResponse} tests.
+ * {@link ErrorResponse} tests.
  *
  * @author Mike Lowe
  */
-public class TimestampResponseTests {
+public class ErrorResponseTest {
 
   @Test
   public void equalsAndHashCode() {
-    EqualsVerifier.forClass(TimestampResponse.class)
+    EqualsVerifier.forClass(ErrorResponse.class)
         .usingGetClass()
         .verify();
   }
