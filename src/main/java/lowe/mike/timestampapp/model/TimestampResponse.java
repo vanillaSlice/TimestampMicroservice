@@ -1,5 +1,6 @@
 package lowe.mike.timestampapp.model;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Objects;
 
@@ -8,6 +9,7 @@ import java.util.Objects;
  *
  * @author Mike Lowe
  */
+@ApiModel(value = "Timestamp Response")
 public class TimestampResponse {
 
   public static final TimestampResponse EMPTY = new TimestampResponse(null, null);
@@ -15,7 +17,7 @@ public class TimestampResponse {
   @ApiModelProperty(notes = "Unix timestamp", example = "1450137600")
   private final Long unix;
 
-  @ApiModelProperty(notes = "Natural date", example = "December 2015, 2015")
+  @ApiModelProperty(notes = "Natural date", example = "December 15, 2015")
   private final String natural;
 
   /**
