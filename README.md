@@ -5,19 +5,65 @@
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/TimestampMicroservice/master.svg)](https://coveralls.io/github/vanillaSlice/TimestampMicroservice?branch=master)
 [![License](https://img.shields.io/github/license/vanillaSlice/TimestampMicroservice.svg)](LICENSE)
 
-A simple timestamp microservice built with Spring Boot. A deployed version can be viewed
-[here](https://slicetimestamp.herokuapp.com/).
+A simple timestamp microservice built with [Spring Boot](http://spring.io/projects/spring-boot). A deployed version can
+be viewed [here](https://slicetimestamp.herokuapp.com/).
 
-## Running Locally
-```
-gradle bootRun
-```
-Then point your browser to [localhost:8080](http://localhost:8080).
+## Getting Started
 
-## Running Tests
+### Prerequisites
+
+* [Java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
+* [Gradle](https://gradle.org) (optional)
+
+### Building
+
+*If you don't want to build the project yourself, head to
+[releases](https://github.com/vanillaSlice/TimestampMicroservice/releases) and download one of the jar files from
+there.*
+
+To build the project yourself:
+
+1. Clone the project.
+2. Navigate to the project directory in your terminal/command prompt.
+3. If you have Gradle installed locally, run the Gradle Daemon:
+
+    ```
+    gradle clean build
+    ```
+
+   If you don't have Gradle installed locally and are running on a Unix-like platform such as Linux or Mac OS X, run:
+
+    ```
+    ./gradlew clean build
+    ```
+
+   If you don't have Gradle installed locally and are running on Windows, run:
+
+    ```
+    gradlew clean build
+    ```
+    
+    This will create a jar file called `timestampapp-1.0.0.jar` in `build/libs`.
+
+### Running
+
+From your terminal/command prompt run:
+
 ```
-gradle test
+java -jar timestampapp-1.0.0.jar
 ```
+
+Point your browser to [localhost:8080](http://localhost:8080) to see the [Swagger](https://swagger.io/) documentation.
+
+## Technology Used
+
+For those of you that are interested, the technology used in this project includes:
+
+* [Java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
+* [Spring Boot](http://spring.io/projects/spring-boot)
+* [Swagger](https://swagger.io/) (API documentation)
+* [JUnit 5](https://junit.org/junit5/) and [Mockito](https://site.mockito.org/) (for testing)
+* [Gradle](https://gradle.org) (for building and dependency management)
 
 ## License
 
