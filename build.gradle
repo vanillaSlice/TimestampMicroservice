@@ -39,6 +39,12 @@ dependencies {
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 }
 
+processResources {
+    filesMatching('application.yaml') {
+        expand(project.properties)
+    }
+}
+
 testSets {
     integrationTest
 }

@@ -34,13 +34,19 @@ public class TimestampController {
     this.timestampService = requireNonNull(timestampService, "timestamp service is null");
   }
 
-  @ApiOperation(value = "convert timestamp", response = TimestampResponse.class)
+  @ApiOperation(
+      value = "Convert timestamp",
+      response = TimestampResponse.class,
+      notes = "Takes a Unix timestamp or natural date string and returns both forms of that date.")
   @ApiResponses(value = {
-      @ApiResponse(code = 200, message = "Converted timestamp", response = TimestampResponse.class),
+      @ApiResponse(
+          code = 200,
+          message = "Successful conversion",
+          response = TimestampResponse.class),
   })
   @GetMapping(value = "/convert/{date}", produces = "application/json")
   public TimestampResponse convert(
-      @ApiParam(required = true, name = "date", value = "Date string")
+      @ApiParam(required = true, name = "date", value = "Unix timestamp or natural date string")
       @PathVariable("date") String date) {
     return timestampService.convert(date);
   }
