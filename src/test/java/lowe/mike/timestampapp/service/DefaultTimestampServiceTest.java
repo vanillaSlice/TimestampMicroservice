@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author Mike Lowe
  */
-public class DefaultTimestampServiceTests {
+public class DefaultTimestampServiceTest {
 
   private final DateTimeFormatter formatter =
       DateTimeFormatter.ofPattern("MMMM dd, yyyy").withZone(ZoneId.systemDefault());
