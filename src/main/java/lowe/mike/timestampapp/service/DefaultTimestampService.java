@@ -1,19 +1,17 @@
 package lowe.mike.timestampapp.service;
 
-import lowe.mike.timestampapp.model.TimestampResponse;
+import static java.util.Objects.requireNonNull;
 
-import java.time.DateTimeException;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-
-import static java.util.Objects.requireNonNull;
+import lowe.mike.timestampapp.model.TimestampResponse;
 
 /**
- * Default implementation of {@link TimestampService}
- * that takes a date string and returns a {@link TimestampResponse}.
+ * Default implementation of {@link TimestampService} that takes a date string and returns a {@link
+ * TimestampResponse}.
  *
  * @author Mike Lowe
  */
@@ -27,12 +25,12 @@ public class DefaultTimestampService implements TimestampService {
    * @param formatter the {@link DateTimeFormatter}
    * @throws NullPointerException if {@code formatter} is {@code null}
    */
-  public DefaultTimestampService(final DateTimeFormatter formatter) {
-    this.formatter = requireNonNull(formatter, "formatter cannot be null");
+  public DefaultTimestampService(DateTimeFormatter formatter) {
+    this.formatter = requireNonNull(formatter, "formatter is null");
   }
 
   @Override
-  public TimestampResponse convert(final String s) {
+  public TimestampResponse convert(String s) {
     if (s == null) {
       return TimestampResponse.EMPTY;
     }
@@ -40,32 +38,28 @@ public class DefaultTimestampService implements TimestampService {
     return isLong(s) ? parseUnix(s) : parseNatural(s);
   }
 
-  private boolean isLong(final String s) {
+  private boolean isLong(String s) {
     try {
       Long.parseLong(s);
       return true;
-    } catch (final NumberFormatException e) {
+    } catch (NumberFormatException e) {
       return false;
     }
   }
 
-  private TimestampResponse parseUnix(final String s) {
-    final long unix = Long.parseLong(s);
-    try {
-      final Instant instant = Instant.ofEpochSecond(unix);
-      final String natural = formatter.format(instant);
-      return new TimestampResponse(unix, natural);
-    } catch (final DateTimeException e) {
-      return TimestampResponse.EMPTY;
-    }
+  private TimestampResponse parseUnix(String s) {
+    long unix = Long.parseLong(s);
+    Instant instant = Instant.ofEpochSecond(unix);
+    String natural = formatter.format(instant);
+    return new TimestampResponse(unix, natural);
   }
 
-  private TimestampResponse parseNatural(final String natural) {
+  private TimestampResponse parseNatural(String natural) {
     try {
-      final LocalDate localDate = LocalDate.parse(natural, formatter);
-      final long unix = localDate.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+      LocalDate localDate = LocalDate.parse(natural, formatter);
+      long unix = localDate.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
       return new TimestampResponse(unix, natural);
-    } catch (final DateTimeParseException e) {
+    } catch (DateTimeParseException e) {
       return TimestampResponse.EMPTY;
     }
   }
