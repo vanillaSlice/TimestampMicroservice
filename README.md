@@ -5,8 +5,8 @@
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/TimestampMicroservice/master.svg)](https://coveralls.io/github/vanillaSlice/TimestampMicroservice?branch=master)
 [![License](https://img.shields.io/github/license/vanillaSlice/TimestampMicroservice.svg)](LICENSE)
 
-A simple timestamp microservice built with Spring Boot. A deployed version can be viewed
-[here](https://slicetimestamp.herokuapp.com/).
+A simple timestamp microservice built with [Spring Boot](http://spring.io/projects/spring-boot). A deployed version can
+be viewed [here](https://slicetimestamp.herokuapp.com/).
 
 ## Getting Started
 
@@ -53,8 +53,7 @@ From your terminal/command prompt run:
 java -jar timestampapp-1.0.0.jar
 ```
 
-Point your browser to [localhost:8080](localhost:8080) to see the
-[Swagger documentation](https://swagger.io/).
+Point your browser to [localhost:8080](http://localhost:8080) to see the [Swagger](https://swagger.io/) documentation.
 
 ## Technology Used
 
