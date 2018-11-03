@@ -1,20 +1,22 @@
 package lowe.mike.timestampapp.controller;
 
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.jupiter.api.Test;
+
+/**
+ * {@link TimestampController} tests.
+ *
+ * @author Mike Lowe
+ */
 public class TimestampControllerTest {
-
-  @Rule
-  public ExpectedException expectedException = ExpectedException.none();
 
   @Test
   public void constructor_nullTimestampService_throwsNullPointerException() {
-    expectedException.expect(NullPointerException.class);
-    expectedException.expectMessage("timestamp service cannot be null");
-
-    new TimestampController(null);
+    NullPointerException exception = assertThrows(NullPointerException.class,
+        () -> new TimestampController(null));
+    assertEquals("timestamp service is null", exception.getMessage());
   }
 
 }

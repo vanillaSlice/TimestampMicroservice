@@ -1,12 +1,11 @@
 package lowe.mike.timestampapp.config;
 
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import lowe.mike.timestampapp.service.DefaultTimestampService;
 import lowe.mike.timestampapp.service.TimestampService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 
 /**
  * Application config.
