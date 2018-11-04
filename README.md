@@ -28,19 +28,19 @@ To build the project yourself:
 3. If you have Gradle installed locally, run the Gradle Daemon:
 
     ```
-    gradle clean build
+    gradle clean assemble
     ```
 
    If you don't have Gradle installed locally and are running on a Unix-like platform such as Linux or Mac OS X, run:
 
     ```
-    ./gradlew clean build
+    ./gradlew clean assemble
     ```
 
    If you don't have Gradle installed locally and are running on Windows, run:
 
     ```
-    gradlew clean build
+    gradlew clean assemble
     ```
     
     This will create a jar file called `timestampapp-1.0.0.jar` in `build/libs`.
