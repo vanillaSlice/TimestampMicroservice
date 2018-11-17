@@ -31,7 +31,7 @@ To build the project yourself:
     gradle clean assemble
     ```
 
-   If you don't have Gradle installed locally and are running on a Unix-like platform such as Linux or Mac OS X, run:
+   If you don't have Gradle installed locally and are running on a Unix-like platform such as Linux or macOS, run:
 
     ```
     ./gradlew clean assemble

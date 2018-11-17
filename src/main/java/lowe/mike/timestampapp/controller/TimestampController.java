@@ -35,13 +35,13 @@ public class TimestampController {
   }
 
   @ApiOperation(
-      value = "Convert timestamp",
+      value = "Converts timestamp",
       response = TimestampResponse.class,
       notes = "Takes a Unix timestamp or natural date string and returns both forms of that date.")
   @ApiResponses(value = {
       @ApiResponse(
           code = 200,
-          message = "Successful conversion",
+          message = "Returns a timestamp response",
           response = TimestampResponse.class),
   })
   @GetMapping(value = "/convert/{date}", produces = "application/json")
