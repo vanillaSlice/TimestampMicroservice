@@ -17,7 +17,6 @@ public class DefaultTimestampServiceTest {
 
   private final DateTimeFormatter formatter =
       DateTimeFormatter.ofPattern("MMMM dd, yyyy").withZone(ZoneId.systemDefault());
-
   private final TimestampService service = new DefaultTimestampService(formatter);
 
   @Test
