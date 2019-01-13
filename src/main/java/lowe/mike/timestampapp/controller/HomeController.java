@@ -15,5 +15,4 @@ public class HomeController {
   public String redirectToSwaggerDocs() {
     return "redirect:/swagger-ui.html";
   }
-
 }

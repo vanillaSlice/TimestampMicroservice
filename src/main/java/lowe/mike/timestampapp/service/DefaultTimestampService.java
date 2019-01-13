@@ -63,5 +63,4 @@ public class DefaultTimestampService implements TimestampService {
       return TimestampResponse.EMPTY;
     }
   }
-
 }

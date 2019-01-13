@@ -14,13 +14,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 /**
- * {@link TimestampApplication} tests.
+ * {@link TimestampApplication} integration tests.
  *
  * @author Mike Lowe
  */
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @ExtendWith(SpringExtension.class)
-public class TimestampApplicationTest {
+public class TimestampApplicationIntegrationTest {
 
   @Autowired
   private Environment environment;
@@ -54,5 +54,4 @@ public class TimestampApplicationTest {
     assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
     assertEquals("{\"status\":404,\"message\":\"Not Found\"}", response.getBody());
   }
-
 }

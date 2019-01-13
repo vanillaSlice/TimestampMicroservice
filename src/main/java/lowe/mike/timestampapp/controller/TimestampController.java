@@ -50,5 +50,4 @@ public class TimestampController {
       @PathVariable("date") String date) {
     return timestampService.convert(date);
   }
-
 }

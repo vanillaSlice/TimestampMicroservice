@@ -24,5 +24,4 @@ public class TimestampConfig {
   public TimestampService timestampService() {
     return new DefaultTimestampService(dateTimeFormatter());
   }
-
 }

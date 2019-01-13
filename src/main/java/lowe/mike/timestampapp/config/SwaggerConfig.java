@@ -58,5 +58,4 @@ public class SwaggerConfig {
         PathSelectors.regex("/convert.*"),
         Predicates.not(PathSelectors.regex("/error.*")));
   }
-
 }
