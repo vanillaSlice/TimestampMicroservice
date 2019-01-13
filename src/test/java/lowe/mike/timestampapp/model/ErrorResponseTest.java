@@ -4,7 +4,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.jupiter.api.Test;
 
 /**
- * {@link ErrorResponse} tests.
+ * {@link ErrorResponse} unit tests.
  *
  * @author Mike Lowe
  */
@@ -16,5 +16,4 @@ public class ErrorResponseTest {
         .usingGetClass()
         .verify();
   }
-
 }

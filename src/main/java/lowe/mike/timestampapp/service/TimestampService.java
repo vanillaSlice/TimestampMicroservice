@@ -16,5 +16,4 @@ public interface TimestampService {
    * @return the {@link TimestampResponse}
    */
   TimestampResponse convert(String date);
-
 }

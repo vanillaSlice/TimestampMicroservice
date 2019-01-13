@@ -4,7 +4,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.jupiter.api.Test;
 
 /**
- * {@link TimestampResponse} tests.
+ * {@link TimestampResponse} unit tests.
  *
  * @author Mike Lowe
  */
@@ -16,5 +16,4 @@ public class TimestampResponseTest {
         .usingGetClass()
         .verify();
   }
-
 }

@@ -37,5 +37,4 @@ public class JsonErrorController implements ErrorController {
     return (String) errorAttributes.getErrorAttributes(new ServletWebRequest(request), false)
         .get("error");
   }
-
 }

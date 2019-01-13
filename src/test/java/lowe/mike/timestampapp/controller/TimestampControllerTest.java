@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
 /**
- * {@link TimestampController} tests.
+ * {@link TimestampController} unit tests.
  *
  * @author Mike Lowe
  */
@@ -18,5 +18,4 @@ public class TimestampControllerTest {
         () -> new TimestampController(null));
     assertEquals("timestamp service is null", exception.getMessage());
   }
-
 }

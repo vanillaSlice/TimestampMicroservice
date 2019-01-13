@@ -58,5 +58,4 @@ public class ErrorResponse {
   public int hashCode() {
     return Objects.hash(getStatus(), getMessage());
   }
-
 }

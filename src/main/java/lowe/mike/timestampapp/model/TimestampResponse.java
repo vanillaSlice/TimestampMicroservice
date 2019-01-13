@@ -66,5 +66,4 @@ public class TimestampResponse {
   public int hashCode() {
     return Objects.hash(unix, natural);
   }
-
 }

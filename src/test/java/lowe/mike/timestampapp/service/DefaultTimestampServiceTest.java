@@ -9,7 +9,7 @@ import lowe.mike.timestampapp.model.TimestampResponse;
 import org.junit.jupiter.api.Test;
 
 /**
- * {@link DefaultTimestampService} tests.
+ * {@link DefaultTimestampService} unit tests.
  *
  * @author Mike Lowe
  */
@@ -65,5 +65,4 @@ public class DefaultTimestampServiceTest {
 
     assertEquals(expected, actual);
   }
-
 }
