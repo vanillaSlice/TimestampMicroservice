@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/github/license/vanillaSlice/TimestampMicroservice.svg)](LICENSE)
 
 A simple timestamp microservice built with [Spring Boot](http://spring.io/projects/spring-boot). A deployed version can
-be viewed [here](https://slicetimestamp.herokuapp.com/).
+be viewed [here](https://timestamp.mikelowe.xyz/).
 
 ## Getting Started
 
