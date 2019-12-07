@@ -1,7 +1,7 @@
 # Timestamp Microservice
 
 [![Latest Release](https://img.shields.io/github/release/vanillaSlice/TimestampMicroservice.svg)](https://github.com/vanillaSlice/TimestampMicroservice/releases/latest)
-[![Build Status](https://img.shields.io/travis/vanillaSlice/TimestampMicroservice/master.svg)](https://travis-ci.org/vanillaSlice/TimestampMicroservice)
+[![Build Status](https://img.shields.io/travis/com/vanillaSlice/TimestampMicroservice/master.svg)](https://travis-ci.com/vanillaSlice/TimestampMicroservice)
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/TimestampMicroservice/master.svg)](https://coveralls.io/github/vanillaSlice/TimestampMicroservice?branch=master)
 [![License](https://img.shields.io/github/license/vanillaSlice/TimestampMicroservice.svg)](LICENSE)
 
@@ -42,7 +42,7 @@ To build the project yourself:
     ```
     gradlew clean assemble
     ```
-    
+
     This will create a jar file called `timestampapp-1.0.0.jar` in `build/libs`.
 
 ### Running
